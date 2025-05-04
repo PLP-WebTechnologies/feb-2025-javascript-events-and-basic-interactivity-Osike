@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bundle of Joy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Interactive Bundle of Joy</h1>
+
+    <button id="myButton">Click Me!</button>
+
+    <h2>Image Gallery</h2>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/100" class="active">
+        <img src="https://via.placeholder.com/100/ff0000/ffffff?text=2">
+        <img src="https://via.placeholder.com/100/00ff00/ffffff?text=3">
+    </div>
+
+    <h2>Tabs</h2>
+    <div>
+        <button class="tab" data-content="tab1">Tab 1</button>
+        <button class="tab" data-content="tab2">Tab 2</button>
+    </div>
+    <div id="tab1" class="tab-content">Content for Tab 1</div>
+    <div id="tab2" class="tab-content" style="display:none;">Content for Tab 2</div>
+
+    <h2>Form Validation</h2>
+    <form id="myForm">
+        <label for="requiredField">Required Field:</label>
+        <input type="text" name="requiredField" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <div id="passwordFeedback" class="feedback"></div><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
